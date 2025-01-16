@@ -1,30 +1,47 @@
 import React from 'react';
 
-import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
-import { DiMongodb } from "react-icons/di";
+import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaDocker } from 'react-icons/fa';
+import { DiMongodb, DiMysql } from "react-icons/di";
+import { SiRubyonrails } from "react-icons/si";
+import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
+import { FaSass } from "react-icons/fa6";
 
 const Projects = () => {
   const projectList = [
     {
-      title: 'Project 1',
-      description: 'A short description of Project 1.',
-      link: 'https://example.com/project1',
-      image: 'https://via.placeholder.com/300',
-      technologies: ['React', 'TailwindCSS', 'Node.js'],
+      title: 'Raffle System',
+      description: `A Raffle System featuring both Admin and User views, complete with user authentication 
+                    for secure access. Users can participate by purchasing raffle tickets, and benefit 
+                    from an invitation system that rewards them for inviting others. The platform supports 
+                    bilingual support with Tagalog and English translations, ensuring a broader reach and 
+                    improved user experience.`,
+      link: 'https://github.com/Jaaarl/item-raffle-system',
+      image: 'raffle2.png',
+      technologies: ['Ruby on Rails', 'Bootstrap', 'MySql', 'JavaScript', 'SASS', 'HTML' , 'Docker'],
     },
     {
-      title: 'Project 2',
-      description: 'A short description of Project 2.',
-      link: 'https://example.com/project2',
-      image: 'https://via.placeholder.com/300',
-      technologies: ['JavaScript', 'Express', 'MongoDB'],
+      title: 'Clinic System',
+      description: `The Clinic Management System helps healthcare providers easily 
+                    manage patient information and medical procedures. It allows for 
+                    recording patient history, documenting SOAP notes, and generating important 
+                    documents like prescriptions, medical certificates, and laboratory requests.`,
+      link: 'https://github.com/Jaaarl/Clinic_v2',
+      image: 'clinic2.png',
+      technologies: ['Next.js', 'React', 'MongoDB', 'Tailwind', 'CSS', 'HTML'],
     },
     {
-      title: 'Project 3',
-      description: 'A short description of Project 3.',
-      link: 'https://example.com/project3',
-      image: 'https://via.placeholder.com/300',
-      technologies: ['Python', 'Django', 'PostgreSQL'],
+      title: 'Movie Review',
+      description: 'A System where user can post review, movies. and filter based on categories',
+      link: 'https://github.com/Jaaarl/movie_review',
+      image: 'movie-review.png',
+      technologies: ['Ruby on Rails', 'MySql', 'Bootstrap', 'CSS', 'HTML', 'Docker'],
+    },
+    {
+      title: `Jarl's Portfolio`,
+      description: 'Showcasing my projects, skills and contact information.',
+      link: 'https://github.com/Jaaarl/movie_review',
+      image: 'personal-portfolio.png',
+      technologies: ['React', 'Tailwind', 'CSS', 'HTML'],
     },
   ];
 
@@ -40,6 +57,24 @@ const Projects = () => {
         return <FaJsSquare className="w-6 h-6 text-yellow-500" />;
       case 'MongoDB':
         return <DiMongodb className="w-6 h-6 text-green-500" />;
+      case 'Bootstrap':
+        return <FaBootstrap className="w-6 h-6 text-purple-500" />;      
+      case 'Ruby on Rails':
+        return <SiRubyonrails className="w-6 h-6 text-red-500" />;
+      case 'Next.js':
+        return <RiNextjsLine className="w-6 h-6 text-black-500" />;      
+      case 'Tailwind':
+        return <RiTailwindCssFill className="w-6 h-6 text-cyan-500" />;
+      case 'MySql':
+        return <DiMysql className="w-6 h-6 text-teal-700" />;
+      case 'CSS':
+        return <FaCss3Alt className="w-6 h-6 text-blue-700" />;
+      case 'HTML':
+        return <FaHtml5 className="w-6 h-6 text-orange-700" />;
+      case 'SASS':
+        return <FaSass className="w-6 h-6 text-pink-700" />;
+      case 'Docker':
+        return <FaDocker className="w-6 h-6 text-blue-700" />;
       default:
         return null;
     }
