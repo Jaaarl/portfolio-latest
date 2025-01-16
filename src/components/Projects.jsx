@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaDocker } from 'react-icons/fa';
+import { FaGithub, FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaDocker } from 'react-icons/fa';
 import { DiMongodb, DiMysql } from "react-icons/di";
 import { SiRubyonrails } from "react-icons/si";
 import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
@@ -110,9 +109,9 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary"
+                  className="btn btn-primary btn-outline"
                 >
-                  View Project
+                  <FaGithub/>View Project
                 </a>
               </div>
             </div>
