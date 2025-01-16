@@ -3,7 +3,7 @@ const Hero = () => {
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
-          src="public/Jarl.jpg"
+          src="/Jarl.jpg"
           className="max-w-sm rounded-lg shadow-2xl" />
         <div>
           <h1 className="text-5xl font-bold">Hi, i'm Jarl!</h1>
