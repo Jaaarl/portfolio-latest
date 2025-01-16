@@ -39,7 +39,7 @@ const Projects = () => {
     {
       title: `Jarl's Portfolio`,
       description: 'Showcasing my projects, skills and contact information.',
-      link: 'https://github.com/Jaaarl/movie_review',
+      link: 'https://github.com/Jaaarl/portfolio-latest',
       image: 'personal-portfolio.png',
       technologies: ['React', 'Tailwind', 'CSS', 'HTML'],
     },
