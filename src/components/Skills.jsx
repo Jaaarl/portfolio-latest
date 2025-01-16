@@ -32,7 +32,7 @@ const Skills = () => {
         </div>
 
         <div className="p-6 rounded-lg shadow-md text-center">
-          <RiNextjsLine className="text-4xl text-white mb-4" />
+          <RiNextjsLine className="text-4xl text-grey-500 mb-4" />
           <h4 className="text-xl font-semibold mb-2">Next.js</h4>
         </div>
 
