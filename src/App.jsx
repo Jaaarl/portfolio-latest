@@ -6,11 +6,11 @@ import Skills from './components/Skills';
 function App() {
   return (
     <> 
-    <Navbar />
-    <Hero />
-    <Projects/>
-    <Skills/>
-    <Contact/>
+      <Navbar />
+      <Hero />
+      <Projects/>
+      <Skills/>
+      <Contact/>
     </>
   )
 }
