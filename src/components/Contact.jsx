@@ -12,7 +12,7 @@ const Contact = () => {
             <FaPhone className="text-3xl text-blue-500" />
             <div>
               <h4 className="text-lg font-semibold">Phone</h4>
-              <p className="text-sm">+1 234 567 890</p>
+              <p className="text-sm">+63 969-563-0833 </p>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@ const Contact = () => {
             <FaEnvelope className="text-3xl text-blue-500" />
             <div>
               <h4 className="text-lg font-semibold">Email</h4>
-              <p className="text-sm">yourname@example.com</p>
+              <p className="text-sm">jarl13.work@gmail.com</p>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ const Contact = () => {
             <FaMapMarkerAlt className="text-3xl text-blue-500" />
             <div>
               <h4 className="text-lg font-semibold">Address</h4>
-              <p className="text-sm">1234 Street Name, City, Country</p>
+              <p className="text-sm">Sorsogon City, Philippines</p>
             </div>
           </div>
         </div>
