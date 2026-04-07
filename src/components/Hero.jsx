@@ -1,41 +1,67 @@
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaFileAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 const Hero = () => {
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="hero bg-base-200 min-h-screen">
-    <div className="hero-content flex-col lg:flex-row-reverse gap-8">
-      <img
-        src="/Jarl.jpg"
-        className="max-w-sm rounded-lg shadow-2xl" />
-      <div> 
-        <h1 className="text-5xl font-bold">Hi, I'm Jarl!</h1>
-        <p className="py-6">
-        A versatile full-stack developer with expertise in Ruby on Rails and Next.js, adept at building scalable, high-performance web applications from front-end to back-end.
-        </p>
-        <div className="flex items-center gap-2">
-          <a href="Empleo_CV.pdf" download>
-            <button className="btn btn-primary">
-              <FaFileAlt /> Download CV
-            </button>
-          </a>
+    <section id="hero" className="min-h-screen gradient-bg flex items-center relative">
+      <div className="max-w-6xl mx-auto px-6 py-32 md:grid md:grid-cols-2 md:gap-16 items-center">
+        {/* Text Content */}
+        <div className="space-y-8">
+          <div className="space-y-4">
+            <p className="text-indigo-400 font-medium tracking-wide text-sm uppercase">
+              AI Engineer & Full-Stack Developer
+            </p>
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              Building Real-World{' '}
+              <span className="gradient-text">AI Applications</span>
+            </h1>
+          </div>
+          
+          <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
+            I build AI-powered systems that solve real problems — from fine-tuning models and 
+            creating agentic workflows to developing scalable full-stack applications.
+          </p>
 
-          <a href="https://github.com/Jaaarl" target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-success">
-              <FaGithub className="text-white"/> Github
-            </button>
-          </a>
+          <div className="flex flex-wrap gap-4 pt-2">
+            <a 
+              href="https://github.com/Jaaarl" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-modern flex items-center gap-2"
+            >
+              <FaGithub /> GitHub
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/jarlempleo13" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-outline-modern flex items-center gap-2"
+            >
+              <FaLinkedin /> LinkedIn
+            </a>
+          </div>
+        </div>
 
-          <a href="https://www.linkedin.com/in/jarlempleo13" target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-info">
-              <FaLinkedin className="text-white"/> LinkedIn
-            </button>
-          </a>
+        {/* Profile Image */}
+        <div className="mt-16 md:mt-0 flex justify-center">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full blur-3xl opacity-20"></div>
+            <img 
+              src="/Jarl.jpg" 
+              alt="Jarl" 
+              className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
+    </section>
   );
 };
 

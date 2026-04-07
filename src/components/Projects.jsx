@@ -1,124 +1,181 @@
-import React from 'react';
-import { FaGithub, FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaDocker } from 'react-icons/fa';
-import { DiMongodb, DiMysql } from "react-icons/di";
-import { SiRubyonrails } from "react-icons/si";
-import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
-import { FaSass } from "react-icons/fa6";
+import { FaGithub, FaExternalLinkAlt, FaBrain, FaReact } from "react-icons/fa";
 
 const Projects = () => {
-  const projectList = [
+  const aiProjects = [
     {
-      title: 'Raffle System',
-      description: `A Raffle System featuring both Admin and User views, complete with user authentication 
-                    for secure access. Users can participate by purchasing raffle tickets, and benefit 
-                    from an invitation system that rewards them for inviting others. The platform supports 
-                    bilingual support with Tagalog and English translations, ensuring a broader reach and 
-                    improved user experience.`,
-      link: 'https://github.com/Jaaarl/item-raffle-system',
-      image: 'raffle2.png',
-      technologies: ['Ruby on Rails', 'Bootstrap', 'MySql', 'JavaScript', 'SASS', 'HTML' , 'Docker'],
+      title: 'AI Clinic Scheduling Agent',
+      description: `An autonomous AI agent that handles clinic reservations via email. 
+                    Processes natural language requests, registers new patients, books appointments, 
+                    handles scheduling conflicts with smart alternatives, and sends automated 
+                    email confirmations — all without human intervention.`,
+      tags: ['OpenClaw', 'AI Agents', 'Email Automation', 'Workflow Orchestration', 'Next.js', 'MongoDB'],
+      link: '#',
+      gradient: 'from-indigo-500 to-purple-600',
+      features: [
+        'Natural language email parsing',
+        'Automated patient registration',
+        'Appointment conflict resolution',
+        'Smart alternative slot suggestions',
+        'Automated email confirmations'
+      ]
     },
     {
-      title: 'Clinic System',
-      description: `The Clinic Management System helps healthcare providers easily 
-                    manage patient information and medical procedures. It allows for 
-                    recording patient history, documenting SOAP notes, and generating important 
-                    documents like prescriptions, medical certificates, and laboratory requests.`,
-      link: 'https://github.com/Jaaarl/Clinic_v2',
-      image: 'clinic2.png',
-      technologies: ['Next.js', 'React', 'MongoDB', 'Tailwind', 'CSS', 'HTML'],
-    },
-    {
-      title: 'Movie Review',
-      description: 'A System where user can post review, movies. and filter based on categories',
-      link: 'https://github.com/Jaaarl/movie_review',
-      image: 'movie-review.png',
-      technologies: ['Ruby on Rails', 'MySql', 'Bootstrap', 'CSS', 'HTML', 'Docker'],
-    },
-    {
-      title: `Jarl's Portfolio`,
-      description: 'Showcasing my projects, skills and contact information.',
-      link: 'https://github.com/Jaaarl/portfolio-latest',
-      image: 'personal-portfolio.png',
-      technologies: ['React', 'Tailwind', 'CSS', 'HTML'],
+      title: 'RAG Knowledge Assistant',
+      description: `Retrieval-Augmented Generation system for intelligent document Q&A. 
+                    Built with LangChain and MiniMax, enabling accurate responses based on 
+                    custom knowledge bases with source citation.`,
+      tags: ['RAG', 'LangChain', 'MiniMax', 'Python', 'Vector Databases'],
+      link: '#',
+      gradient: 'from-cyan-500 to-blue-600',
+      features: [
+        'Semantic document search',
+        'Context-aware responses',
+        'Source attribution',
+        'Custom knowledge base support'
+      ]
     },
   ];
 
-  const getTechIcon = (tech) => {
-    switch (tech) {
-      case 'React':
-        return <FaReact className="w-6 h-6 text-blue-500" />;
-      case 'Node.js':
-        return <FaNodeJs className="w-6 h-6 text-green-500" />;
-      case 'Python':
-        return <FaPython className="w-6 h-6 text-yellow-500" />;
-      case 'JavaScript':
-        return <FaJsSquare className="w-6 h-6 text-yellow-500" />;
-      case 'MongoDB':
-        return <DiMongodb className="w-6 h-6 text-green-500" />;
-      case 'Bootstrap':
-        return <FaBootstrap className="w-6 h-6 text-purple-500" />;      
-      case 'Ruby on Rails':
-        return <SiRubyonrails className="w-6 h-6 text-red-500" />;
-      case 'Next.js':
-        return <RiNextjsLine className="w-6 h-6 text-black-500" />;      
-      case 'Tailwind':
-        return <RiTailwindCssFill className="w-6 h-6 text-cyan-500" />;
-      case 'MySql':
-        return <DiMysql className="w-6 h-6 text-teal-700" />;
-      case 'CSS':
-        return <FaCss3Alt className="w-6 h-6 text-blue-700" />;
-      case 'HTML':
-        return <FaHtml5 className="w-6 h-6 text-orange-700" />;
-      case 'SASS':
-        return <FaSass className="w-6 h-6 text-pink-700" />;
-      case 'Docker':
-        return <FaDocker className="w-6 h-6 text-blue-700" />;
-      default:
-        return null;
-    }
-  };
+  const fullStackProjects = [
+    {
+      title: 'Resort Booking Platform',
+      description: `Full-stack resort management with real-time availability, secure payments, 
+                    and admin dashboard for analytics.`,
+      tags: ['React', 'Express.js', 'PostgreSQL', 'Tailwind', 'ShadCN', 'Docker'],
+      link: 'https://github.com/Jaaarl/resort-app',
+    },
+    {
+      title: 'Clinic Management System',
+      description: `Comprehensive healthcare platform with patient records management, 
+                    SOAP documentation, prescription handling, and automated medical certificate 
+                    issuance. Includes analytics dashboard and inventory management.`,
+      tags: ['Next.js', 'MongoDB', 'Tailwind', 'Analytics', 'Inventory'],
+      link: 'https://github.com/Jaaarl/Clinic_v2',
+    },
+    {
+      title: 'Raffle System',
+      description: `Dual-view raffle platform with authentication, ticket system, 
+                    and bilingual support.`,
+      tags: ['Ruby on Rails', 'MySQL', 'Bootstrap', 'Docker'],
+      link: 'https://github.com/Jaaarl/item-raffle-system',
+    },
+  ];
 
   return (
-    <div className="container mx-auto p-6">
-      <h2 className="text-3xl font-bold text-center mb-6">My Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {projectList.map((project, index) => (
-          <div key={index} className="card w-full bg-base-100 shadow-xl">
-            <figure>
-              <img src={project.image} alt={project.title} className="w-full h-64 object-cover" />
-            </figure>
-            <div className="card-body">
-              <h3 className="card-title">{project.title}</h3>
-              <p>{project.description}</p>
+    <section id="projects" className="py-32 relative">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Section Header */}
+        <div className="text-center mb-20">
+          <p className="text-indigo-400 font-medium tracking-wide text-sm uppercase mb-4">Portfolio</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Featured <span className="gradient-text">Projects</span>
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            A collection of work spanning AI engineering and full-stack development
+          </p>
+        </div>
 
-              <div className="mt-4">
-                <h4 className="font-semibold mb-2">Technologies Used:</h4>
-                <div className="flex flex-wrap gap-4 items-center">
-                  {project.technologies.map((tech, index) => (
-                    <div key={index} className="flex items-center space-x-2">
-                      {getTechIcon(tech)}
-                      <span className="text-lg">{tech}</span>
-                    </div>
-                  ))}
+        {/* AI Engineering Projects */}
+        <div className="mb-20">
+          <h3 className="flex items-center gap-3 text-xl font-semibold mb-8">
+            <span className="p-2 glass-card rounded-lg"><FaBrain className="text-indigo-400" /></span>
+            AI Engineering
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {aiProjects.map((project, index) => (
+              <div 
+                key={index} 
+                className="glass-card rounded-2xl overflow-hidden group"
+              >
+                {/* Project Header with Gradient */}
+                <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
+                
+                <div className="p-8">
+                  <div className="flex items-start justify-between mb-4">
+                    <h4 className="text-xl font-semibold">{project.title}</h4>
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
+                      <FaExternalLinkAlt />
+                    </a>
+                  </div>
+                  
+                  <p className="text-gray-400 mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  {/* Features list */}
+                  {project.features && (
+                    <ul className="space-y-2 mb-4">
+                      {project.features.map((feature, i) => (
+                        <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
+                          <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${project.gradient}`}></span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, i) => (
+                      <span key={i} className="tech-badge">{tag}</span>
+                    ))}
+                  </div>
+
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors text-sm font-medium"
+                  >
+                    View Project <FaExternalLinkAlt className="text-xs" />
+                  </a>
                 </div>
               </div>
-
-              <div className="card-actions justify-end mt-4">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-outline"
-                >
-                  <FaGithub/>View Project
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        {/* Full-Stack Projects */}
+        <div>
+          <h3 className="flex items-center gap-3 text-xl font-semibold mb-8">
+            <span className="p-2 glass-card rounded-lg"><FaReact className="text-cyan-400" /></span>
+            Full-Stack Development
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {fullStackProjects.map((project, index) => (
+              <div 
+                key={index} 
+                className="glass-card rounded-2xl overflow-hidden group"
+              >
+                <div className="p-6">
+                  <h4 className="text-lg font-semibold mb-3">{project.title}</h4>
+                  <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, i) => (
+                      <span key={i} className="tech-badge">{tag}</span>
+                    ))}
+                  </div>
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
+                  >
+                    <FaGithub /> Source
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
