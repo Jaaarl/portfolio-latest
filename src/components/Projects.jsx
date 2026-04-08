@@ -42,7 +42,7 @@ const Projects = () => {
       description: `Full-stack resort management system with real-time availability, secure payments, 
                     inventory management, staff scheduling, and analytics dashboard.`,
       tags: ['React', 'Express.js', 'TypeScript', 'PostgreSQL', 'Tailwind', 'ShadCN', 'Docker'],
-      link: 'https://github.com/Jaaarl?tab=repositories',
+      link: 'https://github.com/Jaaarl/resort',
     },
     {
       title: 'Clinic Management System',
