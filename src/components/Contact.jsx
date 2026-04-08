@@ -12,14 +12,14 @@ const Contact = () => {
     {
       icon: <FaPhone className="text-xl" />,
       label: 'Phone',
-      value: '+63 969 563 0833',
+      value: '+63 939 847 6737',
       link: 'tel:+639695630833',
       gradient: 'from-green-500 to-emerald-600',
     },
     {
       icon: <FaMapMarkerAlt className="text-xl" />,
       label: 'Location',
-      value: 'Sorsogon City, Philippines',
+      value: 'Makati City, Philippines',
       link: null,
       gradient: 'from-orange-500 to-red-600',
     },
