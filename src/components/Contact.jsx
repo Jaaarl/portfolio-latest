@@ -13,7 +13,7 @@ const Contact = () => {
       icon: <FaPhone className="text-xl" />,
       label: 'Phone',
       value: '+63 939 847 6737',
-      link: 'tel:+639695630833',
+      link: 'tel:+639398476737',
       gradient: 'from-green-500 to-emerald-600',
     },
     {
