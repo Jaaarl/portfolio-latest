@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'navbar-glass py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')} className="text-xl font-bold tracking-tight">
-          <span className="gradient-text">Portfolio</span>
+          <span className="gradient-text">Jarl</span>
         </a>
 
         {/* Desktop Nav */}
