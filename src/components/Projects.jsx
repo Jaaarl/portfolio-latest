@@ -9,7 +9,7 @@ const Projects = () => {
                     handles scheduling conflicts with smart alternatives, and sends automated 
                     email confirmations — all without human intervention.`,
       tags: ['OpenClaw', 'AI Agents', 'Email Automation', 'Workflow Orchestration', 'Next.js', 'MongoDB'],
-      link: '#',
+      link: 'https://github.com/Jaaarl/Clinic_v3/tree/feature/queue-system-v2',
       gradient: 'from-indigo-500 to-purple-600',
       features: [
         'Natural language email parsing',
@@ -38,11 +38,11 @@ const Projects = () => {
 
   const fullStackProjects = [
     {
-      title: 'Resort Booking Platform',
-      description: `Full-stack resort management with real-time availability, secure payments, 
-                    and admin dashboard for analytics.`,
-      tags: ['React', 'Express.js', 'PostgreSQL', 'Tailwind', 'ShadCN', 'Docker'],
-      link: 'https://github.com/Jaaarl/resort-app',
+      title: 'Resort Platform System',
+      description: `Full-stack resort management system with real-time availability, secure payments, 
+                    inventory management, staff scheduling, and analytics dashboard.`,
+      tags: ['React', 'Express.js', 'TypeScript', 'PostgreSQL', 'Tailwind', 'ShadCN', 'Docker'],
+      link: 'https://github.com/Jaaarl?tab=repositories',
     },
     {
       title: 'Clinic Management System',
@@ -50,7 +50,7 @@ const Projects = () => {
                     SOAP documentation, prescription handling, and automated medical certificate 
                     issuance. Includes analytics dashboard and inventory management.`,
       tags: ['Next.js', 'MongoDB', 'Tailwind', 'Analytics', 'Inventory'],
-      link: 'https://github.com/Jaaarl/Clinic_v2',
+      link: 'https://github.com/Jaaarl/Clinic_v3',
     },
     {
       title: 'Raffle System',

@@ -1,25 +1,28 @@
-import { FaBrain, FaCode, FaReact, FaPython, FaDocker, FaGitAlt } from "react-icons/fa";
-import { SiOpenai, SiRubyonrails, SiTypescript } from "react-icons/si";
+import { FaBrain, FaCode, FaReact, FaPython, FaDocker, FaGitAlt, FaRobot, FaMicrochip, FaDatabase } from "react-icons/fa";
+import { SiOpenai, SiRubyonrails, SiTypescript, SiSvelte, SiPostgresql, SiRust } from "react-icons/si";
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { DiMongodb, DiMysql } from "react-icons/di";
 
 const Skills = () => {
   const aiSkills = [
-    { name: 'RAG Pipelines', icon: <FaBrain />, color: 'from-indigo-500 to-purple-500' },
-    { name: 'Agentic AI', icon: <SiOpenai />, color: 'from-purple-500 to-pink-500' },
-    { name: 'Fine-tuning', icon: <FaPython />, color: 'from-blue-500 to-cyan-500' },
-    { name: 'AI Automation', icon: <FaBrain />, color: 'from-green-500 to-emerald-500' },
-    { name: 'Prompt Engineering', icon: <FaCode />, color: 'from-orange-500 to-amber-500' },
+    { name: 'RAG', icon: <FaDatabase />, color: 'from-indigo-500 to-purple-500' },
+    { name: 'LLM', icon: <FaMicrochip />, color: 'from-purple-500 to-pink-500' },
+    { name: 'Fine-tuning', icon: <FaRobot />, color: 'from-blue-500 to-cyan-500' },
+    { name: 'AI Agents', icon: <FaBrain />, color: 'from-green-500 to-emerald-500' },
+    { name: 'Prompt Eng.', icon: <FaCode />, color: 'from-orange-500 to-amber-500' },
     { name: 'OpenClaw', icon: <SiOpenai />, color: 'from-cyan-500 to-blue-500' },
   ];
 
   const fullStackSkills = [
     { name: 'React', icon: <FaReact />, color: 'from-blue-500 to-cyan-400' },
     { name: 'Next.js', icon: <RiNextjsLine />, color: 'from-gray-600 to-gray-900' },
-    { name: 'Ruby on Rails', icon: <SiRubyonrails />, color: 'from-red-500 to-red-700' },
+    { name: 'Svelte', icon: <SiSvelte />, color: 'from-orange-500 to-red-500' },
     { name: 'TypeScript', icon: <SiTypescript />, color: 'from-blue-600 to-blue-400' },
+    { name: 'Ruby on Rails', icon: <SiRubyonrails />, color: 'from-red-500 to-red-700' },
+    { name: 'Rust', icon: <SiRust />, color: 'from-orange-600 to-amber-600' },
     { name: 'Tailwind', icon: <RiTailwindCssFill />, color: 'from-cyan-500 to-teal-400' },
     { name: 'Node.js', icon: <FaCode />, color: 'from-green-500 to-green-700' },
+    { name: 'PostgreSQL', icon: <SiPostgresql />, color: 'from-blue-600 to-indigo-600' },
     { name: 'MongoDB', icon: <DiMongodb />, color: 'from-green-500 to-emerald-600' },
     { name: 'MySQL', icon: <DiMysql />, color: 'from-blue-600 to-blue-800' },
     { name: 'Python', icon: <FaPython />, color: 'from-yellow-500 to-yellow-600' },
@@ -68,7 +71,7 @@ const Skills = () => {
             <span className="p-2 glass rounded-lg"><FaCode /></span>
             Full-Stack Development
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4">
             {fullStackSkills.map((skill, index) => (
               <div 
                 key={index} 
