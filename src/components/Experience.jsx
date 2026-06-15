@@ -101,17 +101,9 @@ const Experience = () => {
       current: true,
     },
     {
-      title: 'Jr. Software Engineer',
-      company: 'KODACAMP Bootcamp',
-      period: 'September 2024 - December 2024',
-      description: 'Developed a raffle system using Ruby on Rails, MySQL, Docker, and Bootstrap featuring user authentication, ticket generation, raffle management, random winner selection, role-based access with distinct admin and client sides, and an invite system using QR codes.',
-      technologies: ['Ruby on Rails', 'MySQL', 'Docker', 'Bootstrap'],
-      current: false,
-    },
-    {
       title: 'Jr. Full Stack Web Developer',
       company: "Gubat Mom's & Kids Clinic",
-      period: 'March 2024 - September 2024',
+      period: 'March 2024 - February 2025',
       description: 'Developed a patient management system using Next.js, MongoDB, and Tailwind to track patient registrations and visits, including SOAP documentation operations.',
       technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Patient Management'],
       current: false,
