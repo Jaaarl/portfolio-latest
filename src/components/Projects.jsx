@@ -20,18 +20,20 @@ const Projects = () => {
       ]
     },
     {
-      title: 'RAG Knowledge Assistant',
-      description: `Retrieval-Augmented Generation system for intelligent document Q&A. 
-                    Built with LangChain and MiniMax, enabling accurate responses based on 
-                    custom knowledge bases with source citation.`,
-      tags: ['RAG', 'LangChain', 'MiniMax', 'Python', 'Vector Databases'],
-      link: '#',
+      title: 'LET-Ready',
+      description: `An adaptive LET (Licensure Examination for Teachers) reviewer powered by RAG. 
+                    Features 500+ questions, AI-generated explanations, adaptive quiz focusing on weak areas, 
+                    exam simulation mode, personal dashboard, and study plan generator.`,
+      tags: ['RAG', 'MiniMax', 'ChromaDB', 'FastAPI', 'React', 'Jina AI'],
+      link: 'https://github.com/Jaaarl/LET-Ready',
       gradient: 'from-cyan-500 to-blue-600',
       features: [
-        'Semantic document search',
-        'Context-aware responses',
-        'Source attribution',
-        'Custom knowledge base support'
+        '500+ LET questions across all subjects',
+        'Adaptive quiz — focuses on weak areas',
+        'AI-generated explanations with citations',
+        'Exam simulation mode (timed)',
+        'Personal performance dashboard',
+        'Study plan generator'
       ]
     },
   ];
